@@ -17,9 +17,9 @@
         <div class="pointer-events-none absolute -right-24 top-1/3 h-80 w-80 rounded-full bg-(--crimson)/25 blur-3xl"></div>
 
         <div class="relative mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-10">
-            <span class="inline-flex items-center gap-2 rounded-full border border-(--gold)/30 bg-(--gold)/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] text-(--gold) uppercase">Award Event Specialists</span>
-            <h1 class="mt-6 font-display text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">Turn recognition into an <span class="bg-linear-to-r from-(--gold) via-white to-(--gold) bg-clip-text text-transparent">unforgettable night</span></h1>
-            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/70">Hooura designs and produces award ceremonies, corporate galas and employee recognition events that make every honoree feel like a headliner.</p>
+            <span class="inline-flex items-center gap-2 rounded-full border border-(--gold)/30 bg-(--gold)/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] text-(--gold) uppercase">Award Event and Coperate Gifting Specialists</span>
+            <h1 class="mt-6 font-display text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">We make <span class="bg-linear-to-r from-(--gold) via-white to-(--gold) bg-clip-text text-transparent">recognition</span> worth remembering</h1>
+            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/70">HONOURA designs and coordinates memorable award ceremonies, recognition events and celebratory experiences for companies, churches and organisations.</p>
 
             <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a href="#contact" class="rounded-full bg-linear-to-r from-(--gold) to-(--gold) px-8 py-3.5 text-sm font-bold text-(--purple-950) shadow-(--shadow-gold)">Plan Your Event</a>
@@ -48,24 +48,51 @@
         <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             @php
                 $services = [
-                    ['color' => 'purple', 'title' => 'Corporate Award Galas', 'desc' => 'End-to-end production for annual company award ceremonies, from concept to curtain call.', 'icon' => '<path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" /><path d="M8.5 14 7 22l5-3 5 3-1.5-8" />'],
-                    ['color' => 'crimson', 'title' => 'Employee Recognition Nights', 'desc' => 'Celebrations built to make every team member feel seen, valued and genuinely honored.', 'icon' => '<path d="M12 2 9 9l-7 1 5 5-1 7 6-3 6 3-1-7 5-5-7-1Z" />'],
-                    ['color' => 'gold', 'title' => 'Industry & Association Awards', 'desc' => 'Large-scale ceremonies for associations, trade bodies and sector-wide recognition programs.', 'icon' => '<rect x="3" y="4" width="18" height="14" rx="2" /><path d="M8 21h8M12 18v3" />'],
-                    ['color' => 'purple', 'title' => 'Hybrid & Virtual Ceremonies', 'desc' => 'Broadcast-quality streaming and hybrid staging that reach honorees wherever they are.', 'icon' => '<rect x="2" y="6" width="14" height="12" rx="2" /><path d="M16 10.5 22 7v10l-6-3.5Z" />'],
-                    ['color' => 'crimson', 'title' => 'Stage Design & Production', 'desc' => 'Lighting, staging, sound and show-calling handled by an experienced production crew.', 'icon' => '<path d="M4 20V10l8-6 8 6v10" /><path d="M9 20v-6h6v6" />'],
-                    ['color' => 'gold', 'title' => 'Trophies, Plaques & Custom Awards', 'desc' => 'Bespoke award design and fabrication that matches your brand and the night itself.', 'icon' => '<path d="M8 21h8M12 17v4" /><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z" /><path d="M7 6H4a3 3 0 0 0 3 5M17 6h3a3 3 0 0 1-3 5" />'],
+                    ['color' => 'purple', 'title' => 'Corporate & Organisational Events', 'desc' => 'Professional event coordination for special occasions, milestone celebrations and organisational gatherings.', 'icon' => '<rect x="2" y="6" width="14" height="12" rx="2" /><path d="M16 10.5 22 7v10l-6-3.5Z" />'],
+                    ['color' => 'crimson', 'title' => 'Employee & Team Recognition', 'desc' => 'Thoughtfully designed experiences that celebrate employees, teams and outstanding contributions..', 'icon' => '<path d="M12 2 9 9l-7 1 5 5-1 7 6-3 6 3-1-7 5-5-7-1Z" />'],
+                    ['color' => 'gold', 'title' => 'Church & Ministry Recognition', 'desc' => 'Honour workers, leaders, volunteers and outstanding contributions with the dignity and warmth they deserve.', 'icon' => '<path d="M12 2 9 9l-7 1 5 5-1 7 6-3 6 3-1-7 5-5-7-1Z" />'],
+                    ['color' => 'purple', 'title' => 'Corporate Award Ceremonies', 'desc' => 'End-to-end planning and coordination for corporate, organisational and church award ceremonies.', 'icon' => '<path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" /><path d="M8.5 14 7 22l5-3 5 3-1.5-8" />'],
+                    ['color' => 'gold', 'title' => 'Year-End & Appreciation Events', 'desc' => 'From staff dinners to appreciation nights, we help organisations end the year by celebrating the people who made it possible.', 'icon' => '<rect x="3" y="4" width="18" height="14" rx="2" /><path d="M8 21h8M12 18v3" />'],
+                    ['color' => 'crimson', 'title' => 'Custom Trophies, Plaques & Awards', 'desc' => 'Curated gifts and recognition packages designed for employees, leaders, partners, volunteers and special guests.', 'icon' => '<path d="M4 20V10l8-6 8 6v10" /><path d="M9 20v-6h6v6" />'],
+                    ['color' => 'gold', 'title' => 'Event Styling & Production', 'desc' => 'Stage design, branding, décor, lighting, sound, entertainment and other production elements brought together to create a cohesive experience.', 'icon' => '<path d="M8 21h8M12 17v4" /><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z" /><path d="M7 6H4a3 3 0 0 0 3 5M17 6h3a3 3 0 0 1-3 5" />'],
                 ];
             @endphp
 
             @foreach ($services as $s)
-            <div class="group rounded-2xl border border-(--line) bg-(--white) p-6 shadow-(--shadow-soft) transition hover:-translate-y-1 hover:border-(--{{ $s['color'] }})/40">
-                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-(--{{ $s['color'] }})/10 text-(--{{ $s['color'] }})">
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">{!! $s['icon'] !!}</svg>
+                <div class="group rounded-2xl border border-(--line) bg-(--white) p-6 shadow-(--shadow-soft) transition hover:-translate-y-1 hover:border-(--{{ $s['color'] }})/40">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-(--{{ $s['color'] }})/10 text-(--{{ $s['color'] }})">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">{!! $s['icon'] !!}</svg>
+                    </div>
+                    <h3 class="mt-5 font-display text-lg font-bold text-(--purple-950)">{{ $s['title'] }}</h3>
+                    <p class="mt-2 text-sm leading-6 text-(--ink-soft)">{{ $s['desc'] }}</p>
                 </div>
-                <h3 class="mt-5 font-display text-lg font-bold text-(--purple-950)">{{ $s['title'] }}</h3>
-                <p class="mt-2 text-sm leading-6 text-(--ink-soft)">{{ $s['desc'] }}</p>
-            </div>
             @endforeach
+        </div>
+    </section>
+
+    {{-- Standout --}}
+    <section class="w-full h-150 bg-[linear-gradient(to_bottom,#0B0712,#1A1038_28%,#35206B,#5B5FC7,#8BCFF2,var(--warm-white))] py-12">
+        <div class="mx-auto max-w-2xl text-center">
+            <p class="font-mono text-xs font-semibold tracking-[0.25em] text-(--gold) uppercase">Best Option Anywhere</p>
+            <h2 class="mt-3 font-display text-2xl font-bold tracking-tight text-(--white) sm:text-4xl">What Makes us Different</h2>
+        </div>
+
+        <p class="text-gray-300/90 text-lg sm:text-2xl font-normal px-5  sm:w-1/2 mx-auto text-center mt-6">
+            Whether you’re honouring five exceptional people or celebrating an entire organisation, we design the experience around who you are, who you’re celebrating and what the occasion means.
+            <br> <span class="text-(--gold)"> Thoughtful. Professional. Beautifully coordinated. Made for the moment. </span>
+        </p>
+
+        <div class="ml-auto mt-16 w-fit">
+            <q class="block font-bold text-lg sm:text-xl w-full capitalize px-4 sm:px-10 z-2 text-center sm:text-right text-white"> 
+                We don’t believe every award event should look the same, 
+                <br> Because recognition should feel personal 
+            </q>
+
+            <h4 class="font-bold mt-2 text-right px-10">
+                <span class="text-(--white) text-base underline underline-offset-4">ceo & founder</span>
+                <span class="text-xl text-transparent [-webkit-text-stroke:1px_var(--white)] ml-3">Jannet Edemma</span>
+            </h4>
+
         </div>
     </section>
 
@@ -225,9 +252,5 @@
     {{-- Footer --}}
     <x-footer />
 
-    <script>
-        window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'9c0_ekdkSI1E9YhDAXZ9Ew',sig:'PFLxT7exkpbRMuskw4q-zfMpTfDXFE0eCKvvn3eVHMs=',w:'509px',h:'339px',items:'2217726470',caption: true ,tld:'com',is360: false })});
-    </script>
-    <script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 </body>
 </html>

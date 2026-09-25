@@ -6,26 +6,6 @@
     <title>Wewards — Award Event Specialists</title>
     <meta name="description" content="Wewards designs and produces corporate award ceremonies, employee recognition galas and industry award shows from concept to curtain call." />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <style>
-        :root {
-            --plum: #3B173D;
-            --plum-light: #5C2A5E;
-            --plum-dark: #250F27;
-            --gold: #C8A96B;
-            --gold-light: #DDC495;
-            --gold-dark: #A9854B;
-            --ivory: #FAF7F1;
-            --ivory-dark: #F1EAE0;
-            --mauve: #B99AAF;
-            --mauve-light: #D6C3CD;
-            --mauve-dark: #9B7B8F;
-            --charcoal: #252225;
-            --charcoal-soft: #5A5457;
-            --line: rgba(59, 23, 61, 0.12);
-            --line-dark: rgba(59, 23, 61, 0.2);
-            --white: #FFFFFF;
-        }
-    </style>
 </head>
 <body class="bg-(--ivory) font-montserrat text-(--charcoal) antialiased">
 

@@ -3,41 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
     <title>Wewards — Award Event Specialists</title>
     <meta name="description" content="Wewards designs and produces corporate award ceremonies, employee recognition galas and industry award shows from concept to curtain call." />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <style>
-        :root {
-            --plum: #3B173D;
-            --plum-light: #5C2A5E;
-            --plum-dark: #250F27;
-            --gold: #C8A96B;
-            --gold-light: #DDC495;
-            --gold-dark: #A9854B;
-            --ivory: #FAF7F1;
-            --ivory-dark: #F1EAE0;
-            --mauve: #B99AAF;
-            --mauve-light: #D6C3CD;
-            --mauve-dark: #9B7B8F;
-            --charcoal: #252225;
-            --charcoal-soft: #5A5457;
-            --line: rgba(59, 23, 61, 0.12);
-            --line-dark: rgba(59, 23, 61, 0.2);
-            --white: #FFFFFF;
-        }
-    </style>
 </head>
-<body class="bg-(--ivory) font-montserrat text-(--charcoal) antialiased">
+<body class="bg-linear-to-r from-[#CBE4F0] from-0% to-[#cbe4f02e] to-80% font-montserrat text-(--charcoal) antialiased">
 
     {{-- Nav --}}
-    <nav class="sticky top-0 z-50 border-b border-(--line) bg-(--ivory)/90 backdrop-blur">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-            <a href="#" class="flex items-center gap-2">
-                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-(--plum) font-display text-sm font-bold text-(--gold)">W</span>
-                <span class="font-display text-xl font-bold tracking-tight text-(--plum)">We<span class="text-(--gold-dark)">wards</span></span>
+    <nav class="sticky top-0 z-50 bg-white/50 border-b border-(--line) backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-start px-6 py-4 lg:px-10">
+            <a href="#" class="flex items-center gap-2 md:w-[30%]">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-(--plum) font-basker text-3xl font-bold text-(--gold)">H</span>
+                <span class="font-basker text-3xl tracking-wide font-bold text-(--plum)">on<span class="text-(--gold-dark)">oura</span></span>
             </a>
 
-            <div class="hidden items-center gap-8 md:flex">
+            <div class="hidden items-center gap-8 md:flex md:w-[70%]">
                 <a href="#services" class="text-sm font-semibold text-(--charcoal-soft) transition hover:text-(--gold-dark)">Services</a>
                 <a href="#process" class="text-sm font-semibold text-(--charcoal-soft) transition hover:text-(--gold-dark)">Process</a>
                 <a href="#portfolio" class="text-sm font-semibold text-(--charcoal-soft) transition hover:text-(--gold-dark)">Portfolio</a>
@@ -61,27 +44,47 @@
     </nav>
 
     {{-- Hero --}}
-    <section class="relative overflow-hidden bg-(--plum)">
-        <div class="pointer-events-none absolute -top-32 -left-20 h-96 w-96 rounded-full bg-(--gold)/15 blur-3xl"></div>
-        <div class="pointer-events-none absolute -right-24 top-1/3 h-80 w-80 rounded-full bg-(--mauve)/25 blur-3xl"></div>
+    <section class="relative overflow-hidden py-12">
+        <div class="pointer-events-none absolute -top-32 right-0 h-96 w-96 rounded-full bg-[#F9E6C4] blur-3xl"></div>
 
-        <div class="relative mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-10">
-            <span class="inline-flex items-center gap-2 rounded-full border border-(--gold)/30 bg-(--gold)/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] text-(--gold) uppercase">Award Event Specialists</span>
-            <h1 class="mt-6 font-display text-4xl font-bold tracking-tight text-(--ivory) sm:text-6xl lg:text-7xl">Turn recognition into an <span class="bg-linear-to-r from-(--gold) via-(--mauve-light) to-(--gold) bg-clip-text text-transparent">unforgettable night</span></h1>
-            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-(--mauve-light)">Wewards designs and produces award ceremonies, corporate galas and employee recognition events that make every honoree feel like a headliner.</p>
+        <div class="relative max-w-4xl px-6 py-24 text-left sm:py-32 lg:px-10">
+            <span class="font-bold tracking-wide inline-flex items-center gap-2 rounded-full border border-(--white) bg-[#E6F3F9] px-4 py-1.5 text-xs text-[#3D7089] uppercase">Award Event Specialists</span>
 
-            <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <a href="#contact" class="rounded-full bg-linear-to-r from-(--gold) to-(--gold-dark) px-8 py-3.5 text-sm font-bold text-(--plum-dark) shadow-lg transition hover:-translate-y-0.5">Plan Your Event</a>
-                <a href="#portfolio" class="rounded-full border border-(--ivory)/25 px-8 py-3.5 text-sm font-bold text-(--ivory) transition hover:bg-(--ivory)/10">See Our Work</a>
+            <h1 class="font-basker font-bold tracking-wide mt-6 font-display text-4xl text-(--ivory) sm:text-6xl lg:text-7xl">We Make Recognition Worth Remembering.</h1>
+
+            <p class="mt-6 max-w-2xl text-xl leading-8 text-(--mauve-light)">Honoura designs and produces award ceremonies, corporate galas and employee recognition events that make every honoree feel like a headliner.</p>
+
+            <div class="font-basker font-bold tracking-wide mt-10 flex flex-col items-center justify-start gap-4 sm:flex-row">
+                <a href="#contact" class="font-montserrat font-bold tracking-wide rounded-full bg-linear-to-r from-(--gold) to-(--gold)/50 px-8 py-3.5 text-sm text-[#3D7089] shadow-lg transition">Plan Your Event</a>
+                <a href="#portfolio" class="font-montserrat font-bold bg-[#E6F3F9] tracking-wide rounded-full border border-(--white) px-8 py-3.5 text-sm text-(--ivory) transition hover:bg-(--ivory)/10">See Our Work</a>
             </div>
         </div>
 
-        <div class="relative border-t border-(--ivory)/10">
+        <div class="relative bg-(--white)">
             <div class="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 py-10 text-center sm:grid-cols-4 lg:px-10">
                 <div><p class="font-display text-3xl font-bold text-(--gold)">250+</p><p class="mt-1 text-xs font-semibold tracking-wider text-(--mauve-light) uppercase">Events produced</p></div>
                 <div><p class="font-display text-3xl font-bold text-(--gold)">40+</p><p class="mt-1 text-xs font-semibold tracking-wider text-(--mauve-light) uppercase">Industries served</p></div>
                 <div><p class="font-display text-3xl font-bold text-(--gold)">15</p><p class="mt-1 text-xs font-semibold tracking-wider text-(--mauve-light) uppercase">Years of craft</p></div>
                 <div><p class="font-display text-3xl font-bold text-(--gold)">98%</p><p class="mt-1 text-xs font-semibold tracking-wider text-(--mauve-light) uppercase">Client satisfaction</p></div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Difference --}}
+    <section>
+        <div class="w-[80%] px-8 py-16 mx-auto flex items-center justify-between bg-(--white) rounded-3xl gap-4 shadow-2xl shadow-sky-900">
+            <div class="w-1/2 ">
+                <h4 class="text-(--gold) font-semibold uppercase text-sm tracking-wide">Recognition, beautifully done.</h4>
+                <h2 class="text-[#071C2D] font-semibold text-5xl font-basker capitalize tracking-wide mt-6">Every honour deserves a moment.</h2>
+            </div>
+
+            <div class="w-1/2">
+                <p class="text-lg text-[#071C2D]">
+                    An award is more than a trophy. It is an opportunity to pause, celebrate achievement and tell people, 
+                    <q>What you do matters.</q> 
+                </p>
+
+                <p class="mt-6 text-[#071C2D]"> HONOURA creates those moments with thoughtful concepts, beautiful presentation, carefully coordinated vendors and memorable experiences. </p>
             </div>
         </div>
     </section>

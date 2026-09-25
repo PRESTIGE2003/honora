@@ -8,6 +8,12 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
     --font-montserrat: 'Montserrat';
     --font-quicksand: 'Quicksand';
+    --font-fraunces: "Fraunces 72pt", serif;
+    --font-roman: "Times Nre Roman", serif;
+    --font-basker: "Baskerville Old Face", serif;
+
+    --warm-ivory: #faf7f1;
+    --soft-mauve: #b99aaf;
 
     --navy-900: #0B0F19;
     --navy-800: #111827;
@@ -18,7 +24,10 @@
 
     --ink: #240006;
     --ink-soft: #7A696D;
+    --charcoal: #252225;
 
+    --deep-plum: #3b173d;
+    --champagne-gold: #c8a96b;
     --line: rgba(212, 175, 55, 0.18);
     --line-dark: rgba(168, 15, 42, 0.30);
 

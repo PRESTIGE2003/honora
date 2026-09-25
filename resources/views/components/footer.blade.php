@@ -26,6 +26,8 @@
                         <li>Employee Recognition Nights</li>
                         <li>Industry & Association Awards</li>
                         <li>Stage Design & Production</li>
+                        <li><a href="{{ route('admin.login') }}" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Admin login</a></li>
+                        
                     </ul>
                 </div>
 
