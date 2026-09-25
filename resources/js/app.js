@@ -1,3 +1,10 @@
+const mobileLinks = document.querySelectorAll('.mobileLink');
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+});
+
 document.getElementById("menu-btn").addEventListener("click", function () {
     document.getElementById("mobile-menu").classList.toggle("hidden");
 });

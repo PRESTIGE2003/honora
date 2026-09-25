@@ -1,4 +1,4 @@
-<nav class="sticky top-0 z-50 border-b border-(--line) bg-(--white)/90 backdrop-blur">
+<nav class="sticky top-0 z-50 border-b border-(--line) bg-(--white)/90 backdrop-blur transition-all">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
             <a href="#" class="flex items-center gap-2">
                 <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br from-(--purple) via-(--crimson) to-(--gold) font-display text-sm font-bold text-white">H</span>
@@ -21,10 +21,10 @@
 
         {{-- Mobile --}}
         <div id="mobile-menu" class="h-screen flex-col space-y-3 border-t border-(--line) bg-(--white) px-6 py-10 md:hidden">
-            <a href="#services" class="last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Services</a>
-            <a href="#process" class="last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Process</a>
-            <a href="#portfolio" class="last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Portfolio</a>
-            <a href="#testimonials" class="last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Testimonials</a>
-            <a href="#contact" class="last:mt-4 block mt-2 rounded-full bg-(--purple-950) px-3 py-2 text-center text-sm font-bold text-white">Book a Consultation</a>
+            <a href="#services" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Services</a>
+            <a href="#process" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Process</a>
+            <a href="#portfolio" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Portfolio</a>
+            <a href="#testimonials" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Testimonials</a>
+            <a href="#contact" class="mobileLink last:mt-4 block mt-2 rounded-full bg-(--purple-950) px-3 py-2 text-center text-sm font-bold text-white">Book a Consultation</a>
         </div>
     </nav>
