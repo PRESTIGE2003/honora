@@ -3,14 +3,24 @@
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
+@layer base {
+  .font-fraunces {
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+  }
+  .font-montserrat, .font-baskervville, .font-quicksand {
+    font-optical-sizing: auto;
+  }
+}
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-montserrat: 'Montserrat';
-    --font-quicksand: 'Quicksand';
-    --font-fraunces: "Fraunces 72pt", serif;
+    --font-fraunces: "Fraunces", serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-baskervville: "Baskervville", serif;
+    --font-quicksand: "Quicksand", sans-serif;
     --font-roman: "Times Nre Roman", serif;
-    --font-basker: "Baskerville Old Face", serif;
 
     --warm-ivory: #faf7f1;
     --soft-mauve: #b99aaf;

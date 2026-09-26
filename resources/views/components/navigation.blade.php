@@ -7,10 +7,11 @@
 
             {{-- Desktop --}}
             <div class="hidden items-center gap-8 md:flex">
-                <a href="#services" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Services</a>
-                <a href="#process" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Process</a>
-                <a href="#portfolio" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Portfolio</a>
-                <a href="#testimonials" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Testimonials</a>
+                <a href="{{ route('home').'#services' }}" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Services</a>
+                <a href="{{ route('home').'#process' }}" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Process</a>
+                <a href="{{ route('home').'#portfolio' }}" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Portfolio</a>
+                <a href="{{ route('home').'#testimonials' }}" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Testimonials</a>
+                <a href="{{ route('awards.index') }}" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Award Catelogue</a>
                 <a href="#contact" class="rounded-full bg-(--purple-950) px-5 py-2.5 text-sm font-bold text-white transition hover:bg-(--crimson)">Book a Consultation</a>
                 @auth
                     <a href="{{ route('admin.profile') }}" class="text-sm font-semibold text-(--ink-soft) transition hover:text-(--crimson)">Profile</a>
@@ -28,19 +29,18 @@
 
         {{-- Mobile --}}
         <div id="mobile-menu" class="hidden transition-all h-screen flex-col space-y-3 border-t border-(--line) bg-(--white) px-6 py-10 md:hidden">
-            <a href="#services" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Services</a>
-            <a href="#process" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Process</a>
-            <a href="#portfolio" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Portfolio</a>
-            <a href="#testimonials" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Testimonials</a>
+            <a href="{{ route('home').'#services' }}" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Services</a>
+            <a href="{{ route('home').'#process' }}" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Process</a>
+            <a href="{{ route('home').'#portfolio' }}" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Portfolio</a>
+            <a href="{{ route('home').'#testimonials' }}" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Testimonials</a>
+            <a href="{{ route('awards.index') }}" class="mobileLink last:mt-4 block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Award Catelogue</a>
             <a href="#contact" class="mobileLink last:mt-4 block mt-2 rounded-full bg-(--purple-950) px-3 py-2 text-center text-sm font-bold text-white">Book a Consultation</a>
             @auth
                 <a href="{{ route('admin.profile') }}" class="mobileLink block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Profile</a>
                 <form method="POST" action="{{ route('admin.logout') }}" class="mobileLink">
                     @csrf
                     <button type="submit" class="block w-full rounded-lg px-3 py-2 text-left text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Log out</button>
-                </form>
-            @else
-                <a href="{{ route('admin.login') }}" class="mobileLink block rounded-lg px-3 py-2 text-sm font-semibold text-(--ink-soft) hover:bg-(--warm-white)">Admin login</a>
+                </form>                
             @endauth
         </div>
     </nav>

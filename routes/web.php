@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::middleware('guest')->group(function () {
     Route::get('admin/signup', [AuthController::class, 'showSignup'])->name('admin.signup');
@@ -28,9 +28,5 @@ Route::middleware(['auth', 'admin'])
 
 Route::resource('awards', AwardCatelogueController::class)
         ->middlewareFor(['create', 'store', 'edit', 'update'], ['auth', 'admin']);
-
-Route::get('test', fn () => view('test'));
-Route::get('test2', fn () => view('test-tw'));
-Route::get('test3', fn () => view('test-th'));
 
 Route::post('contact', [ContactController::class])->name('contact.store');
