@@ -17,16 +17,16 @@ Route::middleware('guest')->group(function () {
 });
 
 Route::middleware(['auth', 'admin'])
-        ->prefix('admin')
-        ->name('admin.')
-        ->group(function () {
-            Route::get('profile', [AuthController::class, 'profile'])->name('profile');
-            Route::get('profile/edit', [AuthController::class, 'editProfile'])->name('profile.edit');
-            Route::put('profile', [AuthController::class, 'updateProfile'])->name('profile.update');
-            Route::post('logout', [AuthController::class, 'logout'])->name('logout');
-        });
+    ->prefix('admin')
+    ->name('admin.')
+    ->group(function () {
+        Route::get('profile', [AuthController::class, 'profile'])->name('profile');
+        Route::get('profile/edit', [AuthController::class, 'editProfile'])->name('profile.edit');
+        Route::put('profile', [AuthController::class, 'updateProfile'])->name('profile.update');
+        Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+    });
 
 Route::resource('awards', AwardCatelogueController::class)
-        ->middlewareFor(['create', 'store', 'edit', 'update'], ['auth', 'admin']);
+    ->middlewareFor(['create', 'store', 'edit', 'update'], ['auth', 'admin']);
 
-Route::post('contact', [ContactController::class])->name('contact.store');
+Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
