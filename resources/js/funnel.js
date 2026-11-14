@@ -46,7 +46,7 @@ export default function FunnelScript() {
         };
 
         const setLinks = (m) => document.querySelectorAll("a.wa").forEach(a => a.href = link(m));
-        setLinks("Hello " + BRAND + ", I would like to get a quote for awards and trophies for our event.");
+        setLinks("Hello " + BRAND + ", I would like to get a quote for my event.");
 
         const esc = (s) => s.replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 
