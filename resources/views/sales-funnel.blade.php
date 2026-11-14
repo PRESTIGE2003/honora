@@ -11,7 +11,7 @@
         <a href="https://wa.me/2348107157800"
            target="_blank"
            rel="noopener"
-           class="btn ghost wa fixed top-8 left-[70%] rounded-full w-fit px-5 py-2.5 flex items-center gap-3 bg-(--brand) text-(--brand-fg) font-semibold shadow-md hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900 transition-all">
+           class="btn ghost wa fixed top-8 right-5 md:left-[70%] rounded-full w-fit px-5 py-2.5 flex whitespace-nowrap items-center gap-3 bg-(--brand) text-(--brand-fg) font-semibold shadow-md hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900 transition-all">
             <x-selfhst-whatsapp class="size-5 shrink-0" aria-hidden="true"/>
             <span>Chat Now</span>
         </a>
