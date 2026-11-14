@@ -10,8 +10,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "blade-ui-kit/blade-icons": "^1.11",
         "laravel/framework": "^13.17",
-        "laravel/tinker": "^3.0"
+        "laravel/tinker": "^3.0",
+        "robertboes/blade-selfhst-icons": "^0.4.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

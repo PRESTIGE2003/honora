@@ -30,3 +30,5 @@ Route::resource('awards', AwardCatelogueController::class)
     ->middlewareFor(['create', 'store', 'edit', 'update'], ['auth', 'admin']);
 
 Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+
+require_once "sales.php";

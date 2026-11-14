@@ -1,4 +1,4 @@
-@extends('default-layout')
+@extends('layouts.default-layout')
 
     @section('body')
         {{-- Nav --}}
@@ -244,9 +244,9 @@
         {{-- Entertainment --}}
         <section class="overflow-hidden w-full h-[80vh] grid place-items-center bg-cover bg-no-repeat relative after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-(--navy-900)/60" style="background-image: url('{{ asset('images/Screenshot 2026-09-24 202613.png') }}')">
             <h2 class="text-(--white) font-bold text-5xl w-full capitalize leading-15 px-8 relative z-2">
-                the 
-                <span class="text-transparent [-webkit-text-stroke:2px_red]">Finest</span>, 
-                <br> most refined 
+                the
+                <span class="text-transparent [-webkit-text-stroke:2px_red]">Finest</span>,
+                <br> most refined
                 <br> Entertainment and Acts
             </h2>
         </section>
@@ -274,7 +274,7 @@
                     <div class="overflow-hidden first:col-span-2 first:row-span-1 nth-[2]:col-span-1 nth-[2]:row-span-2 nth-[3]:col-span-2 nth-[3]:row-span-2 nth-[4]:col-span-2 nth-[4]:row-span-2 nth-[5]:col-span-3 nth-[5]:row-span-1">
                         <div class="group relative aspect-4/3 overflow-hidden w-full h-full">
                             <img src="{{ isset($item['img']) ? $item['img'] : 'https://placehold.co/640x480/' . $item['hex'] . '/ffffff?text=Houra' }}"  alt="{{ $item['name'] }}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
-                            
+
                             <div class="absolute inset-0 flex items-end bg-linear-to-t from-(--purple-950)/85 via-(--purple-950)/10 to-transparent p-5">
                                 <p class="font-display text-base font-bold text-white">{{ $item['name'] }}</p>
                             </div>

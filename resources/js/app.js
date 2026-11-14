@@ -1,18 +1,27 @@
+import FunnelScript from './funnel';
+
+// Initialize the funnel script
+FunnelScript();
+
 const mobileLinks = document.querySelectorAll('.mobileLink');
 mobileLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
+    link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
 });
 
-document.getElementById("menu-btn").addEventListener("click", function () {
-    document.getElementById("mobile-menu").classList.toggle("hidden");
-});
+var menuBtn = document.getElementById("menu-btn");
+if (menuBtn) {
+    menuBtn.addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+}
 
 (function () {
     var slide = document.getElementById("testimonial-slide");
     var dots = document.querySelectorAll("#testimonial-dots button");
     var active = 0;
+
     function go(i) {
         active = i;
         slide.style.transform = "translateX(-" + i * 100 + "%)";
@@ -22,6 +31,7 @@ document.getElementById("menu-btn").addEventListener("click", function () {
             d.classList.toggle("bg-white/30", idx !== i);
         });
     }
+
     dots.forEach(function (d, i) {
         d.addEventListener("click", function () {
             go(i);
