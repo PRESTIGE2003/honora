@@ -1,6 +1,4 @@
-@extends('layouts.default-layout')
-
-    @section('body')
+<x-layouts.default-layout>
         {{-- Nav --}}
         <x-navigation />
 
@@ -366,4 +364,4 @@
                 <x-contact-form />
             </div>
         </section>
-@endsection
+</x-layouts.default-layout>

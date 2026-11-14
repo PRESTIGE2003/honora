@@ -20,8 +20,6 @@
 </head>
 <body class="bg-(--white) text-(--ink) antialiased font-montserrat">
 
-@yield('body')
-
 {{ $slot }}
 
 {{-- Footer --}}
