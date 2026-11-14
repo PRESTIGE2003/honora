@@ -5,11 +5,11 @@
 
 @theme {
     /* Fonts */
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
-    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --font-footlight: "Footlight Mt", serif;
-    --font-montserrat: "Montserrat", sans-serif;
+    --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Montserrat', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-footlight: 'Footlight MT Light', 'Footlight MT', 'Cormorant Garamond', Georgia, serif;
 
     /* Palette Tokens */
     --color-purple-dark: #340329;
